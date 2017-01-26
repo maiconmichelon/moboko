@@ -1,10 +1,10 @@
-<body>
+<body style=" background: wheat">
   <div class="container">
     <header>
-      <h1>Todo List</h1>
+      <h1>Banheiros</h1>
     </header>
- 
-    <ul>
+
+    <ul style="padding-left: 0px;">
       {{#each banheiros}}
         {{> banheiro}}
       {{/each}}
@@ -13,5 +13,5 @@
 </body>
  
 <template name="banheiro">
-  <li>{{nome}}</li>
+  <button class="formButtonfront">{{nome}}</button>
 </template>
