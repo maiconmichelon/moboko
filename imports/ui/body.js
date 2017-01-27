@@ -9,3 +9,18 @@ Template.body.helpers({
     return Banheiros.find({});
   },
 });
+
+Template.body.events({
+  'click .formButtonfront'(event) {
+
+    const target = event.target;
+
+    var estado = target.value;
+    if (++estado > 2)
+    	estado = 0;
+
+    Banheiros.update(this._id, {
+      $set: { status: estado},
+    });
+  },
+});
