@@ -2,25 +2,42 @@ html, body {
     height:90%;
 }
 
+body {
+  background: #fafafa;
+}
+
+ul {
+  padding-left: 0px;
+  height: 100%;
+}
+
+.container {
+  height: 100%
+}
+
 .formButtonfront {
-  border:1px solid white;
   width: 98.5%;
   margin: 10px;
   padding: 10px;
   height: 25%;
- }
+  padding: 0;
+  border: none; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6em;
+  font-weight: bold;
+}
 
- .background0 {
-  background: lightgreen url('/images/MeGusta.png') no-repeat top right;
-  background-size: 10% 100%;
- }
+.background0 {
+  background: #4caf50 url('/images/MeGusta.png') no-repeat top right;
+  background-size: 10% 100%
+}
 
- .background1 {
-  background: yellow url('/images/MingFace.png') no-repeat top right;
-  background-size: 10% 100%;
- }
+.background1 {
+  background: #FDD835 url('/images/MingFace.png') no-repeat top right;
+  background-size: 10% 100%
+}
 
- .background2 {
- 	background: red url('/images/rage.png') no-repeat top right;
-  background-size: 10% 100%;
- }
+.background2 {
+ 	background: #d32F2f url('/images/rage.png') no-repeat top right;
+  background-size: 10% 100%
+}
