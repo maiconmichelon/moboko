@@ -6,7 +6,7 @@ import './body.html';
  
 Template.body.helpers({
   banheiros() {
-    return Banheiros.find({});
+    return Banheiros.find({}, { sort: { ordem: 1 } });
   },
 });
 
