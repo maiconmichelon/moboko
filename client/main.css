@@ -28,16 +28,19 @@ ul {
 }
 
 .background0 {
-  background: #4caf50 url('/images/MeGusta.png') no-repeat top right;
-  background-size: 10% 100%
+  background: #4caf50 url('/images/MeGusta.png') no-repeat center right;
+  background-size: 10% auto;
 }
 
 .background1 {
-  background: #FDD835 url('/images/MingFace.png') no-repeat top right;
-  background-size: 10% 100%
+  background: #FDD835 url('/images/MingFace.png') no-repeat center right;
+  background-size: 10% auto;
 }
 
 .background2 {
- 	background: #d32F2f url('/images/rage.png') no-repeat top right;
-  background-size: 10% 100%
+  background: #d32F2f url('/images/rage.png') no-repeat center right;
+  background-size: 10% auto;
 }
+
+
+
