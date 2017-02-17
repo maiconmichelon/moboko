@@ -1,5 +1,7 @@
 # Moboko
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 1. Instale o [Meteor](https://www.meteor.com/).
 2. Baixe o projeto: "git clone https://github.com/maiconmichelon/moboko"
