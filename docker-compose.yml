@@ -1,0 +1,9 @@
+dashboard:
+  image: moboko
+  ports:
+   - "80:80"
+  links:
+   - mongo
+  environment:
+   - MONGO_URL=mongodb://mongo/moboko
+   - ROOT_URL=http://moboko.com
