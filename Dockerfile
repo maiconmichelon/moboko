@@ -6,12 +6,3 @@ FROM quay.io/chriswessels/meteor-tupperware
 
 # The maintainer of your app image
 MAINTAINER Alexsandro
-
-
-# Passos
-# docker-compose up moboko
-# docker exec -ti bc32dbe7a85f /bin/bash
-# mongo
-# use moboko
-# db.banheiros.insert( { nome: "B1", status: 0, ordem: 1, sexo:"m" } )
-# http://localhost:80/
