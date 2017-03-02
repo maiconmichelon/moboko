@@ -2,7 +2,7 @@
 # https://github.com/chriswessels/meteor-tupperware
 
 # Inherit from chriswessels/meteor-tupperware image
-FROM quay.io/chriswessels/meteor-tupperware
+FROM    quay.io/chriswessels/meteor-tupperware
 
 # The maintainer of your app image
 MAINTAINER Alexsandro

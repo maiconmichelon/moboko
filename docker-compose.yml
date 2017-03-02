@@ -1,7 +1,7 @@
 version: '2'
 services:
   database:
-    image: mongo:3.0
+    image: mongo:latest
     command: mongod --smallfiles
     ports:
       - "27017:27017"
@@ -12,7 +12,7 @@ services:
      - "3000:3000"
     environment:
      - MONGO_URL=mongodb://database:27017/moboko
-     - ROOT_URL=http://docker.local
+     - ROOT_URL=http://teste.com
     depends_on:
      - database
     links:
