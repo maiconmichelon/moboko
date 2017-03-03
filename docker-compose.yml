@@ -6,7 +6,7 @@ services:
     ports:
       - "27017:27017"
   moboko:
-    build: .
+    image: alexsandrospecht/moboko:latest
     ports:
      - "80:80"
      - "3000:3000"
