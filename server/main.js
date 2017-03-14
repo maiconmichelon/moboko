@@ -4,9 +4,6 @@ import { Banheiros } from '../imports/api/banheiros.js';
 
 
  Meteor.startup(function () {
-
-   Meteor.sleep(30000);
-
    if (Banheiros.find().count() == 0) {
      Banheiros.insert({ nome: "B1", status: 0, ordem: 1, sexo:"m" });
      Banheiros.insert({ nome: "B2", status: 0, ordem: 2, sexo:"m" });
