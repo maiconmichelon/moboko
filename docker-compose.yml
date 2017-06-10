@@ -1,10 +1,15 @@
-version: '2'
+version: '2.1'
 services:
   database:
     image: mongo:latest
     command: mongod --smallfiles
     ports:
       - "27017:27017"
+    healthcheck:
+      test: ["CMD", "echo", "show dbs", "|", "mongo"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
   moboko:
     image: alexsandrospecht/moboko:latest
     ports:
@@ -14,7 +19,7 @@ services:
      - MONGO_URL=mongodb://database:27017/moboko
      - ROOT_URL=http://teste.com
     depends_on:
-     - database
+      database:
+        condition: service_healthy
     links:
      - database
-    command: ["./wait-for-mongo.sh"]
